@@ -1,0 +1,220 @@
+/* Home.css */
+
+/* Side Images */
+.side-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+/* Centering the content in the middle column */
+/* .main-content {
+  padding: 20px;
+} */
+
+/* To prevent the images from becoming too tall */
+.side-image {
+  position: sticky;
+  top: 0;
+  height: 90vh; 
+ 
+}
+/* .left-side{
+  margin-left: 2px;
+}
+.right-side{
+  margin-right: 2px;
+} */
+
+/* For small screens, the ads will be hidden */
+@media (max-width: 768px) {
+  .side-image {
+    display: none;
+  }
+}
+
+
+/* NavBar.css */
+
+/* Small Top Navbar */
+.top-navbar {
+  padding: 15px 20px; 
+  font-size: 0.85rem;
+}
+
+/* Buttons Styling */
+.top-navbar .btn {
+  font-size: 0.85rem;
+  padding: 0.15rem 1rem; /* Reduced padding for buttons */
+  margin-left: 10px;
+  border: 0;
+}
+/* Social Media Icons */
+.social-icons i {
+  font-size: 1.25rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a.facebook i {
+  color: #3b5998; /* Facebook Blue */
+}
+
+.social-icons a.twitter i {
+  color: #1da1f2; /* Twitter Blue */
+}
+
+.social-icons a.instagram i {
+  color: #e4405f; /* Instagram Pink */
+}
+
+.social-icons a.linkedin i {
+  color: #0077b5; /* LinkedIn Blue */
+}
+
+.social-icons a.youtube i {
+  color: #ff0000; /* YouTube Red */
+}
+
+.social-icons a.rss i {
+  color: #ffcc00; /* RSS Orange */
+}
+
+.social-icons a:hover i {
+  color: #d9534f; /* Red hover effect on all icons */
+}
+/* Header and other styles remain the same */
+
+/* Large Header */
+.header {
+  background-color: #f8f9fa; /* Light background for the header */
+  text-align: center;
+  padding: 15px; /* Adjusted padding */
+  font-family: 'Open Sans', sans-serif; /* Base font family */
+}
+
+/* Styling the main title */
+.header h1 {
+  font-size: 4.5rem; /* Larger font size for the title */
+  color: #d9534f; /* Main title color */
+  font-family: 'Playfair Display', serif; /* Playfair Display font for the title */
+  font-weight: 700; /* Bold weight */
+  margin: 0;
+}
+
+/* Styling the subtitle */
+.header p {
+  font-size: 1.6rem; /* Increased subtitle font size */
+  color: #6c757d; /* Subtitle color */
+  font-family: 'Playfair Display', serif; /* Open Sans for subtitle */
+  margin-top: 10px;
+}
+
+/* Main Sticky Navbar */
+.small-navbar {
+  background-color: #5e6062;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: top 0.3s ease; /* Smooth transition for the navbar */
+}
+
+/* Fixed class to be applied dynamically */
+.fixed-navbar {
+  position: fixed !important;
+  top: 0 !important;
+  width: 100%;
+  z-index: 1000; /* Ensure it's always above content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure Toggler Button is always on top and visible */
+.navbar-toggler {
+  z-index: 1050 !important; /* Ensure it's above other content */
+  border: none; /* Remove border if needed */
+  color: white; /* Make icon visible */
+}
+
+/* Make sure the Toggler Icon is white for visibility */
+.navbar-toggler-icon {
+  background-color: transparent; /* Ensures icon stays visible */
+  color: white;
+}
+
+/* When the navbar expands, ensure it doesn’t overlap the toggler */
+@media (max-width: 991px) {
+  .navbar-expand-lg .navbar-collapse {
+      position: absolute;
+      top: 100%; /* Pushes the expanded menu below the toggler */
+      left: 0;
+      right: 0;
+      z-index: 1040; /* Ensure it’s beneath the toggler button */
+      background-color: #05213c; /* Background color matching navbar */
+      color: white;
+  }
+}
+.small-navbar .navbar-brand, 
+.small-navbar .nav-link {
+  color: white; 
+}
+
+.small-navbar .navbar-brand:hover, 
+.small-navbar .nav-link:hover {
+  color: #d9534f;
+  transition: color 0.3s ease; /* Smooth transition */
+}
+/* body {
+  padding-top: 70px; 
+} */
+
+/* Ensure white text for contrast */
+.text-white {
+  color: #fff !important;
+}
+
+/* footer */
+.footer {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+  font-family: 'Open Sans', sans-serif; 
+  color: #333;
+}
+
+.footer h5 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.footer h3 {
+  font-weight: bold;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer ul li {
+  margin-bottom: 5px;
+}
+
+.footer ul li a {
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  text-decoration: none;
+}
+
+
+@media (max-width: 767px) {
+  .footer h5 {
+    font-size: 16px;
+  }
+  .footer ul li a {
+    font-size: 14px;
+  }
+}
+
